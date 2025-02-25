@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic | Olympics Games</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: rgb(218, 218, 218);
+    }
+
+
+    .main1 {
+      width: 100%;
+      height: 100%;
+      margin-top: 3px;
+    }
+
+
+    .carosel img {
+      height: 730px;
+      width: 100%;
+    }
+
+
+    .sub2heading h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    margin-top: 20px;
+    }
+
+
+    .sub2heading h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 80px;
+    margin-top: 40px;
+    }
+    
+
+
+   .sub2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  
+    padding: 20px;
+    }
+
+   .cards {
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.4s ease-in-out;
+    width: 280px;  
+    height: 350px; 
+    }
+
+
+   .cards:hover {
+    transform: scale(1.1);
+    
+    box-shadow: 0 4px 6px rgb(66, 66, 66);
+    }
+
+
+   .cards .cardsimage img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+    }
+
+
+  .cardsimage p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+    }
+
+
+  .cardsimage a{
+  text-decoration: none;
+    }
+
+
+  .cardscontent {
+    border-top: 2px solid gray;
+    padding: 10px;
+    }
+   
+   .cardscontent img {
+    width: 20px;
+    height: 20px;
+    }
+
+
+@media (max-width: 1024px) {
+    .sub2 {
+        gap: 15px;
+    }
+
+    .sub2heading h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .sub2heading h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub2heading h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        max-width: 100%;
+    }
+
+    .cards .cardsimage img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+
+
+    .timmer {
+    border-top: 2px solid rgb(124, 124, 124);
+    height: auto;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    }
+
+
+   .timmer h1 {
+    font-size: 50px;
+    font-family: fantasy;
+    text-align: center;
+    margin-bottom: 10px;
+   }
+
+
+   #countdown {
+    font-size: 40px;
+    font-family: fantasy;
+    text-align: center;
+    }
+
+
+   .sub4 {
+    width: 100%;
+    position: relative;
+    }
+
+
+   .sub4 img {
+    width: 100%;
+    height: 600px;
+    display: block;
+
+    }
+
+
+   .sub4 .text {
+    position: absolute;
+    color: azure;
+    left: 20%;
+    top: 50%;
+    font-size: 6vw; 
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    text-align: center;
+    }
+    .text:hover{
+      text-decoration: underline;
+    }
+
+   .sub4 .text a {
+    text-decoration: none;
+    color: azure;
+    }
+
+
+   .sub4 .text1 {
+    position: absolute;
+    color: azure;
+    left: 20%;
+    top: 10%;
+    font-size: 1.8vw;
+    transform: translateX(-50%);
+    text-align: center;
+    }
+
+   .sub4 .text1 a {
+    text-decoration: none;
+    color: azure;
+    }
+    .text1:hover{
+      text-decoration: underline;
+    }
+
+
+@media (max-width: 1024px) {
+    .timmer h1 {
+        font-size: 40px;
+    }
+
+    #countdown {
+        font-size: 30px;
+    }
+
+    .sub4 .text {
+        font-size: 5vw;
+    }
+
+    .sub4 .text1 {
+        font-size: 1.6vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .timmer h1 {
+        font-size: 35px;
+    }
+
+    #countdown {
+        font-size: 25px;
+    }
+
+    .sub4 .text {
+        font-size: 4vw;
+    }
+
+    .sub4 .text1 {
+        font-size: 1.4vw;
+        top: 10%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .timmer h1 {
+        font-size: 30px;
+    }
+
+    #countdown {
+        font-size: 20px;
+    }
+
+    .sub4 .text {
+        font-size: 3.5vw;
+    }
+
+    .sub4 .text1 {
+        font-size: 1.2vw;
+        top: 8%;
+    }
+}
+
+
+.main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: rgb(0, 0, 0);
+            border-top: 2px solid rgb(124, 124, 124);
+            padding: 50px 20px;
+            margin-top: 90px;
+           
+            gap: 30px; 
+        }
+
+        .content-box {
+            flex: 1;
+            min-width: 350px;
+            max-width: 700px;
+            min-height: 400px; /* Ensures same height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 650px;
+            position: relative;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps aspect ratio without distortion */
+            border-radius: 10px;
+        }
+
+        .para {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            min-height: 400px; /* Ensures same height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .para h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .para p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: rgb(255, 255, 255);
+            text-align: justify;
+        }
+
+        .para p:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .main {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-box {
+                min-height: auto;
+            }
+
+            .para {
+                max-width: 90%;
+                text-align: center;
+            }
+
+            .para h1 {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .para {
+                max-width: 100%;
+                min-height: auto;
+            }
+
+            .content-box {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .para h1 {
+                font-size: 22px;
+            }
+
+            .para p {
+                font-size: 14px;
+            }
+        }
+
+   .sub5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 5%;
+    border-top: 2px solid rgb(124, 124, 124);
+    }
+
+
+   .left {
+    font-family: fantasy;
+    font-size: 5vw; 
+    text-align: center;
+    margin: 30px 0;
+    }
+    
+
+
+   .right {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+   .right h1 {
+    font-size: 2vw;
+    text-align: center;
+    margin: 20px 0;
+    }
+
+
+   .right p {
+    font-size: 1.2vw;
+    text-align: justify;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+    }
+    .right p:hover{
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+
+
+   .button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: #3e3e3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+
+
+    .button:hover {
+    background-color: #000;
+    }  
+
+
+   .hidden {
+    display: none;
+    }
+
+
+@media (max-width: 1024px) {
+    .left {
+        font-size: 4vw;
+    }
+
+    .right h1 {
+        font-size: 3vw;
+    }
+
+    .right p {
+        font-size: 1.5vw;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .left {
+        font-size: 5vw;
+    }
+
+    .right h1 {
+        font-size: 4vw;
+    }
+
+    .right p {
+        font-size: 2vw;
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .left {
+        font-size: 6vw;
+        margin: 20px 0;
+    }
+
+    .right h1 {
+        font-size: 5vw;
+    }
+
+    .right p {
+        font-size: 2.5vw;
+    }
+
+    .button {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+
+   .sub6heading {
+    border-top: 2px solid rgb(124, 124, 124);
+    text-align: center;
+    padding: 30px 0;
+    } 
+
+   .sub6heading h1 {
+    font-family: fantasy;
+    font-size: 5vw; 
+    margin: 0;
+     }
+    
+
+   .sub6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 50px 5%;
+    }
+
+
+   .sub6card {
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(124, 124, 124);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    }
+
+     
+    .sub6card:hover {
+    transform: scale(1.05);
+    }
+
+
+  .sub6card img {
+    max-width: 100%;
+    max-height: 80px;
+    }
+
+
+@media (max-width: 1024px) {
+    .sub6heading h1 {
+        font-size: 6vw;
+    }
+
+    .sub6 {
+        gap: 1.5rem;
+    }
+
+    .sub6card {
+        width: 160px;
+        height: 120px;
+    }
+
+    .sub6card img {
+        max-height: 70px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sub6heading h1 {
+        font-size: 7vw;
+    }
+
+    .sub6 {
+        gap: 1rem;
+        padding: 30px 5%;
+    }
+
+    .sub6card {
+        width: 140px;
+        height: 110px;
+    }
+
+    .sub6card img {
+        max-height: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .sub6heading h1 {
+        font-size: 8vw;
+    }
+
+    .sub6card {
+        width: 120px;
+        height: 100px;
+    }
+
+    .sub6card img {
+        max-height: 50px;
+    }
+}
+  
+
+    .footerimage img {
+      width: 200px;
+      margin-left: 40px;
+    }
+
+
+
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+           
+        }
+        #image1{
+            height: 70px;
+
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            z-index: 10;
+        }
+        .brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .menu-button {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .menu li {
+            display: inline;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: rgba(0, 0, 0, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .menu.active {
+                display: flex;
+            }
+            .menu-button {
+                display: block;
+            }
+        }
+
+
+.hover-div {
+    display: none;
+    position: absolute;
+    top: 60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    background: rgb(36, 36, 36);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    z-index: 999;
+}
+
+
+.column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+
+.column div {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.column div a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.column div:hover {
+    background-color: rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 768px) {
+    .hover-div {
+        width: 90%;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+        
+  </style>
+</head>
+
+<body>
+
+<div class="nac">
+  
+  <nav class="navbar">
+    <a href="#" class="brand"><img src="Olympic_rings_without_rims.svg.png" id="image1"></a>
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <ul id="menu" class="menu">
+      <li class="nav-item">
+        <a class="nav-link" id="olympic-link" href="#">Olympic Games</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="athletes.html">Athletes</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="sports.html">Sports</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+    </li>
+    </ul>
+</nav>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('menu').classList.toggle('active');
+    });
+</script>
+
+<div class="hover-div" id="hoverDiv">
+    <div class="column">
+        <div><a href="https://www.olympics.com/en/olympic-games/salt-lake-city-utah-2034"><h2>Salt Lake City-Utah 2034</h2></a></div>
+        <div><a href="https://www.olympics.com/en/brisbane-2032"><h2>Brisbane 2032</h2></a></div>
+        <div><a href="https://www.olympics.com/en/olympic-games/french-alps-2030"><h2>French Alps 2030</h2></a></div>
+        <div><a href="https://www.olympics.com/en/olympic-games/dolomiti-valtellina-2028"><h2>Dolomiti Valtellina 2028</h2></a></div>
+    </div>
+    <div class="column">
+        <div><a href="https://www.olympics.com/en/olympic-games/los-angeles-2028"><h2>LA 2028</h2></a></div>
+        <div><a href="https://www.olympics.com/en/olympic-games/dakar-2026"><h2>Dakar 2026</h2></a></div>
+        <div><a href="https://milanocortina2026.olympics.com/en"><h2>Milano Cortina 2026</h2></a></div>
+        <div><a href="https://www.olympics.com/en/olympic-games/paris-2024"><h2>Paris 2024</h2></a></div>
+    </div>
+</div>
+
+
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let olympicGamesLink = document.getElementById("olympic-link"); 
+    let hoverDiv = document.getElementById("hoverDiv");
+
+    olympicGamesLink.addEventListener("mouseenter", function () {
+        hoverDiv.style.display = "flex";
+    });
+
+    olympicGamesLink.addEventListener("mouseleave", function () {
+        setTimeout(() => {
+            if (!hoverDiv.matches(":hover")) {
+                hoverDiv.style.display = "none";
+            }
+        }, 200);
+    });
+
+    hoverDiv.addEventListener("mouseleave", function () {
+        hoverDiv.style.display = "none";
+    });
+
+    hoverDiv.addEventListener("mouseenter", function () {
+        hoverDiv.style.display = "flex";
+    });
+});
+
+   </script>
+
+</div>
+  
+
+    <div class="carosel">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="ai carosel.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ai carosel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ai caeosel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+
+    <div class="sub2heading">
+      <h1>FEATURED ATHLETES</h1>
+    </div>
+    <div class="sub2">
+      <div class="cards">
+        <div class="cardsmedals">
+        </div>
+        <div class="cardsimage">
+          <a href="simoen biles.html"><img src="im1.jpg"></a>
+          <a href="simoen biles.html">
+            <p>SIMONE BILES</p>
+          </a>
+        </div>
+        <div class="cardscontent">
+          <p>GYMNAST</p>
+          <p> <img src="flag1.png" alt="">USA</p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="cardsmedals">
+        </div>
+        <div class="cardsimage">
+          <a href="armand duplaintis.html"><img src="im2.jpg"></a>
+          <a href="armand duplaintis.html">
+            <p>ARMAND DUPLAINTIS</p>
+          </a>
+        </div>
+        <div class="cardscontent">
+          <p>POLE VAULTER</p>
+          <p> <img src="flag2.png" alt="">SWEDEN</p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="cardsmedals">
+        </div>
+        <div class="cardsimage">
+          <a href="summer mcintosh.html"><img src="im3.jpg"></a>
+          <a href="summer mcintosh.html">
+            <p>SUMMER MCLNTOSH</p>
+          </a>
+        </div>
+        <div class="cardscontent">
+          <p>SWIMMER</p>
+          <p> <img src="flag3.png" alt="">CANADA</p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="cardsmedals">
+        </div>
+        <div class="cardsimage">
+          <a href="BEATRICE CHEBET.html"><img src="im4.jpg"></a>
+          <a href="BEATRICE CHEBET.html">
+            <p>BEATRICE CHEBET</p>
+          </a>
+        </div>
+        <div class="cardscontent">
+          <p>RUNNER</p>
+          <p> <img src="flag4.png" alt="">KENYA</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="main">
+      <div class="img">
+        <div class="video-container">
+          <video controls autoplay muted loop>
+              <source src="215421_small.mp4" type="video/mp4">
+              <source src="215421_small.mp4" type="video/webm">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      </div>
+      <div class="para">
+        <h1><b>The 2024 Paris Olympics</b></h1>
+        <p>The 2024 Paris Olympic Games will unite the world's finest athletes in a spectacular celebration of sports,
+          culture, and international unity. Taking place in the heart of France, these Games will showcase 32 sports
+          across 329 events, featuring athletes from over 200 nations competing at the highest level.
+          As Paris hosts the Olympics for the third time in history, the event promises to be a historic and
+          unforgettable
+          experience. With a strong emphasis on sustainability, innovation, and inclusivity, the 2024 Games will not
+          only
+          highlight world-class performances but also set new standards for environmentally friendly and socially
+          responsible sporting events. From iconic venues like the Stade de France to the breathtaking backdrop of the
+          Eiffel Tower, Paris 2024 will blend tradition with modernity, offering an unparalleled Olympic experience.
+          This edition of the Games aims to inspire the next generation of athletes and fans while promoting the Olympic
+          values of excellence, respect, and friendship. Whether you're watching from the stands or tuning in from
+          around
+          the world, the 2024 Paris Olympics will be a thrilling showcase of human potential, perseverance, and global
+          unity.</p>
+      </div>
+    </div>
+
+
+
+    <div class="timmer">
+      <h1>NEXT GAMES</h1>
+      <div class="timer" id="countdown">00d 00h 00m 00s</div>
+    </div>
+
+
+
+    <div class="sub4">
+      <img src="milano-1920x1063.jpeg" class="img-fluid">
+      <div class="text1"><a href="https://www.olympics.com/en/">06-22 FEBURARY</a></div>
+      <div class="text"><a href="https://www.olympics.com/en/">MILANO <br>CORTINA <br> 2026</a></div>
+    </div>
+
+
+
+    <div class="sub5">
+      
+        
+      <div class="left">About the Game</div>
+      <div class="right">
+        <h1>Iconic Venues</h1>
+        <p>Paris 2024 transformed the most iconic landmarks in the City of Light into sporting arenas, the likes the world
+          has never seen before. From the beach volleyball competition nestled beside the Eiffel Tower to equestrian at the
+          Chateau de Versailles and fencing in the Grand Palais, many of the most well-loved locations in Paris became
+          centres of Olympic sports competition as millions in attendance witnessed the capital of France in a new and
+          unforgettable way.</p>
+    
+        <h1>Gender Parity on the Field of Play</h1>
+        <p>In line with its slogan, ‘Games Wide Open’, Paris 2024 was the first Olympic Games in history to achieve gender
+          parity on the field of play. Of the 10,500 quotas available to athletes, the International Olympic Committee
+          distributed an equal number to female and male athletes. At the same time, the Opening Ceremony saw 96 per cent of
+          National Olympic Committees choose two athletes - one female and one male - to carry their respective countries'
+          flags.
+    
+          Furthermore, 28 out of 32 sports reached full gender parity during the Games, with more than half of all medal
+          events at Paris 2024 open to female athletes.</p>
+    
+          <button id="show-button" class="button" onclick="showContent()"><i class="fa-solid fa-plus"></i></button>
+          <div id="extra-content"  class="hidden">
+              
+        <h1>An Opening Ceremony Like Never Before</h1>
+        <p>For the first time in history, the Opening Ceremony of an Olympic Summer Games was held outside of a stadium -
+          and to spectacular effect.
+    
+          The Opening Ceremony on the river Seine is one of the most enduring images of the Games and featured a parade of
+          athletes travelling in 85 boats along a six-kilometre route that ended with a spectacular show in Paris’s
+          world-famous Trocadero.
+    
+          Around 320,000 in-person spectators and billions more across the globe were treated to a mesmerising showcase of
+          international talent, from the mezzo-soprano Axelle Saint-Cirel’s rousing rendition of "La Marseillaise" to Celine
+          Dion’s unforgettable performance of Edith Piaf’s "L'hymne à l'amour".
+        </p>
+    
+        <h1>A Record-Breaking Olympic Games</h1>
+        <p>9,556,792 tickets were sold for the Olympic Games (as well as 2,575,855 for the Paralympic Games) with no less
+          than 125 Olympic records beaten over the 14 days of competition. Athletics was particularly successful with over a
+          million tickets sold, while records were also broken in women’s team sports. These included a new record of 27,000
+          for a women’s basketball match and a record of 26,000 for a women’s handball match.
+    
+          Away from the field of play, fan zones also proved to be a huge success with over 7.5 million people visiting them
+          across France.</p>
+        </div>
+
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="sub6heading">
+      <h1>OLYMPIC PARTNERS</h1>
+    </div>
+    <div class="sub6">
+      <div class="sub6card"><a
+          href="https://www.airbnb.ie/?locale=en&_set_bev_on_new_domain=1739887121_EAYzc4Y2Y5NGQxNz"><img
+            src="sponser1.jpg"></a></div>
+      <div class="sub6card"><a href="https://www.bridgestone.com/"><img src="sponser2.jpg"></a></div>
+      <div class="sub6card"><a href="https://www.panasonic.com/mea/en/pk.html"><img src="sponser3.jpg"></a></div>
+      <div class="sub6card"><a href="https://www.toyota.com/"><img src="sponser4.jpg"></a></div>
+      <div class="sub6card"><a href="https://www.samsung.com/pk/"><img src="sponser5.jpg"></a></div>
+      <div class="sub6card"><a href="https://www.omegawatches.com/"><img src="sponser6.jpg"></a></div>
+      <div class="sub6card"><a
+          href="https://www.alibaba.com/showroom/hips-resin-prices.html?cps=0k1li4a0&bm=cps&src=saf&gad_source=1&gclid=Cj0KCQiA_NC9BhCkARIsABSnSTZchiFsXJpcmRMIswOGDuBo8nw3BcZycXF9knSHQPBSWHBESVhfL6MaAreTEALw_wcB"><img
+            src="sponser7.jpg"></a></div>
+      <div class="sub6card"><a href="https://pk.visamiddleeast.com/pay-with-visa/find-a-card/credit-cards.html"><img
+            src="sponser8.jpg"></a></div>
+      <div class="sub6card"><a href="https://www.intel.com/content/www/us/en/homepage.html"><img src="sponser9.jpg"></a>
+      </div>
+      <div class="sub6card"><a href="https://www.coca-colacompany.com/"><img src="sponser10.jpg"></a></div>
+    </div>
+
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto footerimage">
+            <h5 class="text-uppercase fw-bold mb-4"><a href="home.html"><img
+                  src="Olympic_rings_without_rims.svg.png"></a></h5>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+            <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Olympic games</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Athletes</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Sports</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+            <h5 class="text-uppercase fw-bold mb-4">Contact Us</h5>
+            <p><i class="fas fa-map-marker-alt me-2"></i> 123 Main St, City</p>
+            <p><i class="fas fa-phone me-2"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope me-2"></i> info@etherealinteriors.com</p>
+          </div>
+          <div class="col-md-3 col-lg-4 col-xl-4 mx-auto">
+            <h5 class="text-uppercase fw-bold mb-4">Follow Us</h5>
+            <a href="https://www.facebook.com/olympics/" class="btn btn-outline-light btn-floating m-1"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/Olympics" class="btn btn-outline-light btn-floating m-1"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/add/olympics" class="btn btn-outline-light btn-floating m-1"><i
+                class="fab fa-snapchat"></i></a>
+            <a href="https://www.threads.net/@olympics" class="btn btn-outline-light btn-floating m-1"><i
+                class="fab fa-threads"></i></a>
+            <a href="https://www.tiktok.com/@olympics" class="btn btn-outline-light btn-floating m-1"><i
+                class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 bg-black">
+        © 2024 Olympics. All Rights Reserved.
+      </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+  function startCountdown(targetDate) {
+    function updateTimer() {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
+
+      if (timeLeft <= 0) {
+        document.getElementById("countdown").innerHTML = "Time's up!";
+        clearInterval(timerInterval);
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    updateTimer();
+    const timerInterval = setInterval(updateTimer, 1000);
+  }
+
+  const targetDate = new Date("2025-12-31 23:59:59").getTime();
+  startCountdown(targetDate);
+  
+       function showContent() {
+         document.getElementById("extra-content").classList.remove("hidden");
+         document.getElementById("show-button").style.display = "none";
+        }
+
+</script>
+
+
